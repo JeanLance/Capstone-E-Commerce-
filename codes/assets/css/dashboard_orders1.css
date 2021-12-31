@@ -1,0 +1,75 @@
+.container {
+    width: calc(100% - 90px);
+    min-height: 200px;
+    padding: 20px 45px;
+}
+.container .filter-tab {
+    width: 100%;
+    min-height: 40px;
+    margin: 5px 0 15px;
+    position: relative;
+}
+    .filter-tab input, select {
+        width: 220px;
+        height: 35px;
+        text-indent: 3px;
+        font-size: 20px;
+    }
+    .filter-tab input[type="search"] {
+        border-radius: 15px;
+    }
+    .filter-tab select {
+        position: absolute;
+        right: 0;
+    }
+.container table {
+    width: 100%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border: 3px solid #111;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+    table th {
+        background-color: rgb(51, 51, 51);
+        text-align: left;
+        padding: 2px 5px;
+        color: #ddd;
+    }
+    table tr.row-odd {
+        background-color: rgb(131, 131, 131);
+    }
+    table td {
+        padding: 8px 5px;
+        font-size: 19px;
+    }
+    table th + th, table td + td {
+        border-left: 2px solid #111;
+    }
+    table td a {
+        color: rgb(37, 37, 134);
+    }
+    table td select {
+        width: 100%;
+        height: 35px;
+        text-indent: 3px;
+        font-size: 20px;
+}
+.container #orders-page-link {
+    width: 100%;
+    height: 40px;
+    margin: 25px 0 0;
+    text-align: center;
+}
+    #orders-page-link a {
+        padding: 5px 8px;
+        color: blue;
+        font-size: 20px;
+    }
+    #orders-page-link a + a {
+        border-left: 2px solid #111;
+    }
+    #orders-page-link a.active-link {
+        text-decoration: none;
+        color: darkblue;
+    }

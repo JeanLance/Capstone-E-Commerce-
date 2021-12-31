@@ -1,0 +1,97 @@
+.container {
+    width: calc(100% - 90px);
+    min-height: 200px;
+    padding: 20px 45px;
+    font-size: 0;
+}
+.container > div {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+}
+.container #customer-details {
+    width: calc(30% - 34px);
+    min-height: 200px;
+    margin: 0 5% 0 0;
+    padding: 10px 15px 45px;
+    border: 2px solid #111;
+}
+    #customer-details p {
+        font-weight: 700;
+    }
+    #customer-details ul {
+        margin: 35px 0 0;
+    }
+    #customer-details ul li {
+        list-style: none;
+    }
+.container #order-details {
+    width: calc(65% - 64px);
+    min-height: 200px;
+    padding: 10px 30px;
+    font-size: 0;
+}
+    #order-details table {
+        width: 100%;
+        margin: 0 auto 50px;
+        table-layout: fixed;
+        border: 3px solid #111;
+        border-collapse: collapse;
+        font-size: 20px;
+    }
+        table th {
+            background-color: rgb(51, 51, 51);
+            text-align: left;
+            padding: 2px 5px;
+            color: #ddd;
+        }
+        table tr.row-odd {
+            background-color: rgb(131, 131, 131);
+        }
+        table td {
+            padding: 8px 5px;
+            font-size: 19px;
+        }
+        table th + th, table td + td {
+            border-left: 2px solid #111;
+        }
+        table td img {
+            width: 50px;
+            cursor: pointer;
+        }
+        table td a {
+            margin: 0 5px;
+            color: rgb(37, 37, 134);
+        }
+    #order-details > div {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        min-height: 30px;
+        font-size: 20px;
+    }
+        div#status-tab span.status {
+            display: block;
+            width: 60%;
+            min-height: 30px;
+            line-height: 30px;
+            text-indent: 5px;
+            border: 2px solid #111;
+        }
+            span.shipped {
+                background-color: rgb(36, 182, 36);
+            }
+            span.cancelled {
+                background-color: rgb(248, 71, 106);
+            }
+            span.in-process {
+                background-color: rgb(255, 255, 72);
+            }
+        div#total-summary-tab span.total{
+            display: block;
+            width: 60%;
+            min-height: 30px;
+            line-height: 30px;
+            text-indent: 5px;
+            border: 2px solid #111;
+        }

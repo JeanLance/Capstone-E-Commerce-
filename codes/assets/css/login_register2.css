@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #d4eeff;
+}
+.container {
+    width: 32%;
+    min-height: 200px;
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px #111;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 430px; /* The width is 400px, when the viewport is 800px or smaller */
+    }
+}
+.container h1, h2 {
+    text-align: center;
+}
+.container form {
+    margin: 50px 0 0;
+}
+    form label {
+        display: block;
+        min-height: 55px;
+        margin: 5px 0 0;
+        font-size: 17px;
+        line-height: 30px;
+        position: relative;
+    }
+    form label span {
+        color: red;
+    }
+    form label input {
+        width: 64%;
+        height: 25px;
+        border: 1px solid #111;
+        font-size: 15px;
+        text-indent: 3px;
+        position: absolute;
+        right: 0;
+    }
+    form label input.error {
+        background-color: rgb(255, 249, 249);
+        border: 2px solid red;
+    }
+    form div {
+        height: 30px;
+        margin: 15px 0 0;
+        position: relative;
+    }
+    form div input[type="submit"] {
+        width: 100px;
+        height: 30px;
+        background-color: blue;
+        border: 1px solid #111;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        position: absolute;
+        right: 0;
+    }
+    form div input[type="submit"]:hover {
+        box-shadow: 3px 3px 5px #111;
+    }
+    form label div.input-error-msg {
+        width: 100%;
+        height: 25px;
+        margin: 0;
+        text-align: right;
+        color: red;
+        font-size: 15px;
+    }
+.container .form-change {
+    display: block;
+    margin: 25px 0 0;
+    text-align: center;
+}
+    .form-change a {
+        color: blue;
+        text-decoration: none;
+    }
+    

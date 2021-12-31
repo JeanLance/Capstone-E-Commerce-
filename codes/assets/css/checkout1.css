@@ -1,0 +1,196 @@
+.container {
+    width: calc(100% - 90px);
+    min-height: 200px;
+    padding: 20px 45px;
+    font-size: 0;
+}
+.container div#form-tab, .container section#item-tab {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 200px;
+    font-size: 20px;
+}
+    .container #form-tab {
+        width: calc(65% - 30px);
+        padding: 15px 15px;
+    }
+        #form-tab span.divider-segment {
+            display: block;
+            width: calc(100% + 20px);
+            height: 2px;
+            margin: 10px 0 10px -10px;
+            background-color: #666;
+            border-radius: 5px;
+        }
+        #form-tab > div {
+            width: 100%;
+        }
+        #form-tab #shipping-billing-info {
+            min-height: 200px;
+            padding: 5px 0 10px;
+            font-size: 0;
+        }
+            #shipping-billing-info > span {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+                span.shipping-info h3, span.billing-info h3 {
+                    font-size: 25px;
+                    color: rgb(53, 134, 255);
+                }
+                span.shipping-info div, span.billing-info div {
+                    vertical-align: top;
+                    height: 40px;
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+                span.shipping-info div label, span.billing-info div label {
+                    margin: 0;
+                }
+                span.shipping-info div input, span.billing-info div input {
+                    vertical-align: middle;
+                    width: 18px;
+                    height: 18px;
+                }
+                span.shipping-info label, span.billing-info label {
+                    display: block;
+                    margin: 10px 0;
+                    font-size: 20px;
+                    position: relative;
+                }
+                span.shipping-info label input, span.billing-info label input {
+                    width: 250px;
+                    font-size: 17px;
+                    text-indent: 3px;
+                    position: absolute;
+                    right: 20px;
+                }
+        #form-tab #payment-method {
+            min-height: 150px;
+            padding: 5px 0 10px;
+        }
+            #payment-method > span {
+                display: block;
+                width: 60%;
+                margin: 0 auto;
+                padding: 0 0 15px;
+            }
+                span.card-details h3 {
+                    font-size: 25px;
+                    color: rgb(53, 134, 255);
+                }
+                .card-details label {
+                    display: block;
+                    margin: 10px 0;
+                    font-size: 20px;
+                    position: relative;
+                }
+                .card-details label input {
+                    width: 250px;
+                    font-size: 17px;
+                    text-indent: 3px;
+                    position: absolute;
+                    right: 0;
+                }
+                    .expiration .card-expiry-date {
+                        position: absolute;
+                        right: 0;
+                    }
+                        .expiration .card-expiry-date input {
+                            width: 114px;
+                            position: relative;
+                        }
+    .container #item-tab {
+        width: calc(31% - 34px);
+        margin: 0 0 0 3%;
+        padding: 15px 15px 100px;
+        border: 2px double #111;
+        border-radius: 5px;
+        position: relative;
+    }
+        #item-tab h3 {
+            font-size: 25px;
+            color: #111;
+        }
+            #items .item {
+                display: block;
+                width: 100%;
+                min-height: 50px;
+                padding: 0 0 10px;
+                margin: 0 0 5px;
+                font-size: 0;
+                background-color: rgb(214, 214, 255)
+            }
+                .item img, .item div {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 100%;
+                    font-size: 18px;
+                }
+                .item img {
+                    width: 100px;
+                    height: 100px;
+                }
+                .item div {
+                    width: calc(100% - 120px);
+                    padding: 0 10px;
+                }
+                .item div p {
+                    display: block;
+                    width: 100%;
+                    min-height: 25px;
+                    margin: 0 0 10px;
+                    line-height: 25px;
+                    text-align: center;
+                    word-wrap: break-word;
+                }
+                .item div label {
+                    display: block;
+                    height: 25px;
+                    line-height: 25px;
+                    font-size: 17px;
+                }
+                .item div label input {
+                    width: 50px;
+                    text-align: center;
+                    font-size: 17px;
+                }
+                .item div label a {
+                    text-decoration: underline;
+                    margin: 0 0 0 10px;
+                    color: rgb(38, 38, 204);
+                }
+                .item div label a:hover {
+                    color: rgb(0, 132, 255);
+                }
+                .item div > input.remove-item {
+                    display: block;
+                    width: 100px;
+                    height: 25px;
+                    margin: 0 auto;
+                    background-color: rgb(193, 230, 255);
+                    border: 1px solid #111;
+                    border-radius: 5px;
+                }
+        #item-tab .action-buttons {
+            width: calc(100% - 30px);
+            height: 50px;
+            position: absolute;
+            bottom: 30px;
+        }
+            .action-buttons p {
+                line-height: 50px;
+            }
+            .action-buttons input {
+                height: 30px;
+                padding: 0 15px;
+                font-size: 17px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+.error {
+    box-shadow: 0px 0px 3px red;
+    border: 1px solid red;
+}

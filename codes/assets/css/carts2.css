@@ -1,0 +1,94 @@
+.container {
+    width: calc(100% - 90px);
+    min-height: 200px;
+    padding: 20px 45px 50px;
+}
+.container table {
+    width: 90%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border: 3px solid #111;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+    table th {
+        background-color: rgb(88, 155, 255);
+        text-align: left;
+        padding: 0 5px;
+    }
+    table tr.row-odd {
+        background-color: rgb(179, 208, 253);
+    }
+    table td {
+        padding: 8px 5px;
+        position: relative;
+    }
+    table td.quantity {
+        font-size: 0;
+    }
+    table td > img {
+        width: 50px;
+        height: 50px;
+    }
+        .quantity > span {
+            display: inline-block;
+            vertical-align: middle;
+            width: 33%;
+            font-size: 20px;
+        }
+        .quantity > span input {
+            width: 50px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+        }
+        .quantity > span a {
+            color: blue;
+            font-size: 20px;
+        }
+        .quantity > span a img {
+            width: 19px;
+        }
+        @media screen and (max-width: 1000px) {
+            .quantity > span {
+                display: block;
+                margin: 5px 0 0;
+            }
+        }
+    table td input[type="checkbox"] {
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+    }
+.container #user-cart-total {
+    width: 90%;
+    min-height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+    #user-cart-total a {
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 15px;
+        border: 2px solid #111;
+        background-color: rgb(8, 155, 255);
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+    #user-cart-total > span {
+        vertical-align: top;
+        font-size: 20px;
+        text-align: right;
+        position: absolute;
+        right: 0;
+    }
+    #user-cart-total input {
+        padding: 5px 15px;
+        border: 2px solid #888;
+        background-color: rgb(145, 211, 255);
+        font-size: 20px;
+        color: #fff;
+    }

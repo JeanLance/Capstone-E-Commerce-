@@ -1,0 +1,164 @@
+.container {
+    width: calc(100% - 90px);
+    min-height: 200px;
+    padding: 20px 45px;
+    font-size: 0;
+}
+.container > div, a, h2 {
+    font-size: 20px;
+}
+.container > a {
+    color: blue;
+}
+.container h2 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+.container h5 {
+    font-size: 15px;
+}
+.container #item-details {
+    font-size: 0;
+}
+    #item-details div {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 20px;
+    }
+    #item-details .item-images {
+        width: 35%;
+        min-height: calc(200px - 20px);
+        padding: 10px 0;
+    }
+        .item-images #main-img-box {
+            display: block;
+            width: calc(95% - 34px);
+            height: calc(300px - 34px);
+            margin: 0 auto;
+            padding: 15px;
+            border: 2px solid #111;
+        }
+            #main-img-box img {
+                width: 100%;
+                height: inherit;
+            }
+        .item-images #item-img-collection {
+            display: flex;
+            width: 100%;
+            min-height: 70px;
+            margin: 25px 0 0;
+            overflow-x: auto;
+        }
+            #item-img-collection img {
+                width: calc(100px - 14px);
+                height: calc(70px - 14px);
+                padding: 5px;
+                border: 2px solid #111;
+            }
+            #item-img-collection img + img {
+                margin-left: 15px;
+            }
+    #item-details .item-description {
+        width: calc(65% - 20%);
+        min-height: calc(200px - 20px);
+        padding: 10px 15% 10px 5%;
+    }
+.container #user-action-form {
+    width: 100%;
+    min-height: 30px;
+    margin: 15px 0;
+}
+    #user-action-form form#user-action {
+        position: relative;
+    }
+        #user-action span {
+            position: absolute;
+            right: 0;
+        }
+        #user-action span select {
+            vertical-align: top;
+            width: 180px;
+            height: 30px;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        #user-action span input {
+            vertical-align: top;
+            height: 35px;
+            padding: 0 10px;
+            border: 2px solid #111;
+            background-color: rgb(8, 155, 255);
+            line-height: 30px;
+            font-size: 20px;
+            color: #fff;
+        }
+.container #similar-items {
+    width: 100%;
+    min-height: 30px;
+    margin: 25px 0 50px;
+    font-size: 0;
+}
+    #similar-items span.sim-item {
+        display: inline-block;
+        vertical-align: top;
+        width: 150px;
+        height: 160px;
+        margin: 0 15px 15px;
+        font-size: 19px;
+    }
+        .sim-item a {
+            color: #111;
+            text-decoration: none;
+        }
+        .sim-item .img-box {
+            width: calc(100% - 4px);
+            height: calc(130px - 4px);
+            border: 2px solid #111;
+            position: relative;
+        }
+            .img-box img {
+                width: calc(100% - 10px);
+                height: calc(130px - 10px);
+                margin: 5px;
+            }
+            .img-box span.item-price {
+                display: block;
+                width: calc(100% - 10px);
+                height: 30px;
+                padding: 0 5px;
+                background-color: rgba(88, 155, 255, 0.5);
+                line-height: 30px;
+                letter-spacing: 2px;
+                text-align: right;
+                font-weight: 700;
+                position: absolute;
+                bottom: 0;
+            }
+        .sim-item span.item-name {
+            display: block;
+            width: 100%;
+            height: 30px;
+            text-indent: 3px;
+            line-height: 30px;
+        }
+/* Style for the pop-up message when item is added to cart */
+div#add-msg {
+    display: none;
+    width: 300px;
+    height: 50px;
+    border: 2px groove rgba(7, 7, 44, 0.938);
+    border-bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(88, 155, 255, 0.7);
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+    #add-msg p {
+        text-align: center;
+        line-height: 50px;
+        font-size: 25px;
+        color: #111;
+    }
